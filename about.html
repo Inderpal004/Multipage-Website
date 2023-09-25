@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduford - Html/Css</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="" /></a>
+            <div class="nav-links" id="navLinks">
+                <i class="ri-close-fill" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="/course.html">COURSE</a></li>
+                    <li><a href="/blog.html">BLOG</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="ri-menu-fill" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>About Us</h1>
+    </div>
+
+    <!-- ---------------about us content-------- -->
+
+    <section class="about-us">
+        <div class="row">
+        <div class="about-col">
+            <h1>We are the World's Largest University</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, laboriosam impedit? Suscipit adipisci nobis consequatur rerum esse, earum quam quasi similique atque sequi reiciendis aperiam, voluptas neque saepe tempora molestias aut! Omnis nemo sit numquam optio, error placeat? Quo, cumque.</p>
+            <a href="/" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.jpg" alt="">
+        </div>
+    </div>
+    </section>
+
+    
+    <!-- -----------footer-------------- -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio inventore sequi accusamus voluptates <br> voluptas ipsam. Lorem ipsum dolor sit amet.</p>
+        <div class="icons">
+            <i class="ri-facebook-box-fill"></i>
+            <i class="ri-twitter-fill"></i>
+            <i class="ri-instagram-fill"></i>
+            <i class="ri-linkedin-fill"></i>
+        </div>
+        <p>Made with <i class="ri-heart-line fa-heart"></i> by Inderpal</p>
+    </section>
+
+    <!-- -----javascript------------ --> 
+    <script>
+        let navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

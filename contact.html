@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduford - Html/Css</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="" /></a>
+            <div class="nav-links" id="navLinks">
+                <i class="ri-close-fill" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="/course.html">COURSE</a></li>
+                    <li><a href="/blog.html">BLOG</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="ri-menu-fill" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Contact Us</h1>
+    </div>
+
+    <!-- ---------------Conatct us content-------- -->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55079.09175879899!2d75.50315263465428!3d30.366769446399847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3910f21485ea741d%3A0x262904ff63351750!2sBarnala%2C%20Punjab!5e0!3m2!1sen!2sin!4v1695645466622!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <div class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="ri-home-heart-fill"></i>
+                    <span>
+                        <h5>XYZ Road,Harmoney Homes</h5>
+                        <p>Barnala,Punjab,IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="ri-phone-fill"></i>
+                    <span>
+                        <h5>+919014510987</h5>
+                        <p>Monday to Saturday , 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="ri-mail-add-line"></i>
+                    <span>
+                        <h5>info@inderpal.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form >
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter email Address" required>
+                    <input type="text" placeholder="Enter your subject" required>
+                    <textarea  rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- -----------footer-------------- -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio inventore sequi accusamus voluptates <br> voluptas ipsam. Lorem ipsum dolor sit amet.</p>
+        <div class="icons">
+            <i class="ri-facebook-box-fill"></i>
+            <i class="ri-twitter-fill"></i>
+            <i class="ri-instagram-fill"></i>
+            <i class="ri-linkedin-fill"></i>
+        </div>
+        <p>Made with <i class="ri-heart-line fa-heart"></i> by Inderpal</p>
+    </section>
+
+    <!-- -----javascript------------ --> 
+    <script>
+        let navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
